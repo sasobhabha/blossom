@@ -56,23 +56,12 @@ struct StressWidgetView: View {
         }
     }
     
+    // Small complication: just the stress percentage, tinted by severity.
     private var circularView: some View {
-        ZStack {
-            Circle()
-                .stroke(color.opacity(0.3), lineWidth: 4)
-            Circle()
-                .trim(from: 0, to: min(max(snapshot.score / 100, 0), 1))
-                .stroke(color, style: StrokeStyle(lineWidth: 4, lineCap: .round))
-                .rotationEffect(.degrees(-90))
-            VStack(spacing: 0) {
-                Text("\(Int(snapshot.score.rounded()))")
-                    .font(.system(.headline, design: .rounded))
-                    .foregroundColor(color)
-                Text("stress")
-                    .font(.system(.caption2))
-            }
-        }
-        .containerBackground(for: .widget) { Color.black }
+        Text("\(Int(snapshot.score.rounded()))%")
+            .font(.system(.title3, design: .rounded).weight(.semibold))
+            .foregroundColor(color)
+            .containerBackground(for: .widget) { Color.black }
     }
     
     private var rectangularView: some View {
@@ -96,8 +85,9 @@ struct StressWidgetView: View {
     }
     
     private var inlineView: some View {
-        Text("Blossom: \(snapshot.shortLevel) · \(Int(snapshot.heartRate.rounded())) bpm")
+        Text("\(Int(snapshot.score.rounded()))%")
             .font(.caption)
+            .foregroundColor(color)
     }
 }
 
