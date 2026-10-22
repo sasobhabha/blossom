@@ -1,0 +1,10 @@
+PubMed database skill - user notification record
+Recorded: 2026-10-21 (session start)
+
+User was notified (see conversation output) to:
+1. Check the terms at https://pubmed.ncbi.nlm.nih.gov/disclaimer/
+2. Check https://www.ncbi.nlm.nih.gov/home/about/policies/
+3. Always check the license of papers retrieved via this skill for any
+   restrictions before reuse.
+
+No NCBI_API_KEY or USER_EMAIL configured (optional; skill used without them).

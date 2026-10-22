@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		383296AF2F1F0C2B00C2706A /* Blossom Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 383296AE2F1F0C2B00C2706A /* Blossom Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		383296F72F1F0C2C00C2706A /* BlossomWidget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 383296F02F1F0C2C00C2706A /* BlossomWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,13 @@
 			remoteGlobalIDString = 383296AD2F1F0C2B00C2706A;
 			remoteInfo = "Blossom Watch App";
 		};
+		383296FC2F1F0C2C00C2706A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 383296832F1F0C2A00C2706A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 383296F22F1F0C2C00C2706A;
+			remoteInfo = BlossomWidget;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -60,6 +68,17 @@
 			name = "Embed Watch Content";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		383296F62F1F0C2C00C2706A /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				383296F72F1F0C2C00C2706A /* BlossomWidget.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -69,7 +88,18 @@
 		383296AE2F1F0C2B00C2706A /* Blossom Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Blossom Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		383296BD2F1F0C2C00C2706A /* Blossom Watch AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Blossom Watch AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		383296C72F1F0C2C00C2706A /* Blossom Watch AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Blossom Watch AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		383296F02F1F0C2C00C2706A /* BlossomWidget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = BlossomWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		383296FD2F1F0C2C00C2706A /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 383296F22F1F0C2C00C2706A /* BlossomWidget */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		3832968D2F1F0C2A00C2706A /* Blossom */ = {
@@ -100,6 +130,14 @@
 		383296CA2F1F0C2C00C2706A /* Blossom Watch AppUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = "Blossom Watch AppUITests";
+			sourceTree = "<group>";
+		};
+		383296F12F1F0C2C00C2706A /* BlossomWidget */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				383296FD2F1F0C2C00C2706A /* PBXFileSystemSynchronizedBuildFileExceptionSet */,
+			);
+			path = BlossomWidget;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -147,6 +185,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		383296F42F1F0C2C00C2706A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -159,6 +204,7 @@
 				383296B22F1F0C2B00C2706A /* Blossom Watch App */,
 				383296C02F1F0C2C00C2706A /* Blossom Watch AppTests */,
 				383296CA2F1F0C2C00C2706A /* Blossom Watch AppUITests */,
+				383296F12F1F0C2C00C2706A /* BlossomWidget */,
 				3832968C2F1F0C2A00C2706A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -172,6 +218,7 @@
 				383296AE2F1F0C2B00C2706A /* Blossom Watch App.app */,
 				383296BD2F1F0C2C00C2706A /* Blossom Watch AppTests.xctest */,
 				383296C72F1F0C2C00C2706A /* Blossom Watch AppUITests.xctest */,
+				383296F02F1F0C2C00C2706A /* BlossomWidget.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -256,10 +303,12 @@
 				383296AA2F1F0C2B00C2706A /* Sources */,
 				383296AB2F1F0C2B00C2706A /* Frameworks */,
 				383296AC2F1F0C2B00C2706A /* Resources */,
+				383296F62F1F0C2C00C2706A /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				383296FB2F1F0C2C00C2706A /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				383296B22F1F0C2B00C2706A /* Blossom Watch App */,
@@ -317,6 +366,28 @@
 			productReference = 383296C72F1F0C2C00C2706A /* Blossom Watch AppUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		383296F22F1F0C2C00C2706A /* BlossomWidget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 383296F82F1F0C2C00C2706A /* Build configuration list for PBXNativeTarget "BlossomWidget" */;
+			buildPhases = (
+				383296F32F1F0C2C00C2706A /* Sources */,
+				383296F42F1F0C2C00C2706A /* Frameworks */,
+				383296F52F1F0C2C00C2706A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				383296F12F1F0C2C00C2706A /* BlossomWidget */,
+			);
+			name = BlossomWidget;
+			packageProductDependencies = (
+			);
+			productName = BlossomWidget;
+			productReference = 383296F02F1F0C2C00C2706A /* BlossomWidget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -371,6 +442,7 @@
 				383296AD2F1F0C2B00C2706A /* Blossom Watch App */,
 				383296BC2F1F0C2C00C2706A /* Blossom Watch AppTests */,
 				383296C62F1F0C2C00C2706A /* Blossom Watch AppUITests */,
+				383296F22F1F0C2C00C2706A /* BlossomWidget */,
 			);
 		};
 /* End PBXProject section */
@@ -412,6 +484,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		383296C52F1F0C2C00C2706A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		383296F52F1F0C2C00C2706A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -463,6 +542,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		383296F32F1F0C2C00C2706A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -490,6 +576,11 @@
 			isa = PBXTargetDependency;
 			target = 383296AD2F1F0C2B00C2706A /* Blossom Watch App */;
 			targetProxy = 383296C82F1F0C2C00C2706A /* PBXContainerItemProxy */;
+		};
+		383296FB2F1F0C2C00C2706A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 383296F22F1F0C2C00C2706A /* BlossomWidget */;
+			targetProxy = 383296FC2F1F0C2C00C2706A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -615,14 +706,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Blossom Watch App/Blossom Watch App.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 8PQR26VG3C;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = Blossom;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "Blossom reads your heart rate, heart rate variability, breathing rate, blood oxygen, activity, and sleep data from Apple Watch to estimate your stress level. All processing happens on your device.";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.educhange.Blossom;
+				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -639,7 +733,7 @@
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 26.2;
+				WATCHOS_DEPLOYMENT_TARGET = 10.6;
 			};
 			name = Debug;
 		};
@@ -648,14 +742,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Blossom Watch App/Blossom Watch App.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 8PQR26VG3C;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = Blossom;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "Blossom reads your heart rate, heart rate variability, breathing rate, blood oxygen, activity, and sleep data from Apple Watch to estimate your stress level. All processing happens on your device.";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.educhange.Blossom;
+				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -673,7 +770,7 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				VALIDATE_PRODUCT = YES;
-				WATCHOS_DEPLOYMENT_TARGET = 26.2;
+				WATCHOS_DEPLOYMENT_TARGET = 10.6;
 			};
 			name = Release;
 		};
@@ -682,18 +779,21 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Blossom/Blossom.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 8PQR26VG3C;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = Blossom;
+				INFOPLIST_KEY_NSHealthClinicalHealthRecordsShareUsageDescription = "We need your data to warn you when you are stressed. Your data does not leave your device.";
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "Breathing data needed";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 26.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -717,18 +817,21 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Blossom/Blossom.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 8PQR26VG3C;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = Blossom;
+				INFOPLIST_KEY_NSHealthClinicalHealthRecordsShareUsageDescription = "We need your data to warn you when you are stressed. Your data does not leave your device.";
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "Breathing data needed";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 26.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -932,6 +1035,69 @@
 			};
 			name = Release;
 		};
+		383296F92F1F0C2C00C2706A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_ENTITLEMENTS = "BlossomWidget/BlossomWidget.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8PQR26VG3C;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = BlossomWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.educhange.Blossom.watchkitapp.BlossomWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 10.6;
+			};
+			name = Debug;
+		};
+		383296FA2F1F0C2C00C2706A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_ENTITLEMENTS = "BlossomWidget/BlossomWidget.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8PQR26VG3C;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = BlossomWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.educhange.Blossom.watchkitapp.BlossomWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 10.6;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -994,6 +1160,15 @@
 			buildConfigurations = (
 				383296E22F1F0C2C00C2706A /* Debug */,
 				383296E32F1F0C2C00C2706A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		383296F82F1F0C2C00C2706A /* Build configuration list for PBXNativeTarget "BlossomWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				383296F92F1F0C2C00C2706A /* Debug */,
+				383296FA2F1F0C2C00C2706A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
